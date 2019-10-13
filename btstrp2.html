@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="Viewport" content="width=device-width, intial-scale=1" >
+    <title>Cheat Sheet</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist\css\bootstrap.min.css" />
+    <style>
+      .navbar{margin-bottom: 0;border-radius: 0;}
+    </style>
+  </head>
+  <body>
+<nav class="navbar navbar-inverse"><!-- navbar-default -->
+  <div class="container"><!-- container-fluid -->
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a><!-- Image Here and text will be alt -->
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!--<form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form> -->
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul> -->
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container -->
+</nav>
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1>heading 1 jumbotron</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </p>
+    <a href="#" class="btn btn-primary">btn btn-primary</a>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <p>Brand Image With nav bar</p>
+  <code>
+    &lt;div class="container"&gt;
+       &lt;div class="navbar-header"&gt;
+         &lt;a class="navbar-brand" href="#"&gt;
+           &lt;img alt="Brand" src="index.png"&gt;
+         &lt;/a&gt;
+       &lt;/div&gt;
+     &lt;/div&gt;
+  </code>
+<br><h1> <mark>Tabs</mark> </h1> <p><small> <code>.nav-tabs</code>requires <code>.nav</mark> </code> </p>
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"> <a href="#">Home</a> </li>
+  <li role="presentation"> <a href="#">About</a> </li>
+  <li role="presentation"> <a href="#">Message</a> </li>
+</ul> <br>
+<h1 style=""> <mark>Pills</mark> </h1> <h2> <small><code>.nav-pills</code> instead</small>  </h2>
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"> <a href="#">Home</a> </li>
+  <li role="presentation"> <a href="#">About</a> </li>
+  <li role="presentation"> <a href="#">Message</a> </li>
+</ul>
+<p>pills can only be vertically stackable add <code>.nav-stacked</code> </p><br>
+<ul class="nav nav-pills nav-stacked">
+  <li role="presentation" class="active"> <a href="#">Home</a> </li>
+  <li role="presentation"> <a href="#">About</a> </li>
+  <li role="presentation"> <a href="#">Message</a> </li>
+</ul><br>
+<h1>Justified</h1>
+<p>Easily make tabs or pills equal widths of their parent at screens wider than 768px with<code> .nav-justified</code> On smaller screens, the nav links are stacked</p>
+<ul class="nav nav-tabs nav-justified">
+  <li role="presentation" class="active"> <a href="#">home</a> </li>
+  <li role="presentation"> <a href="#">About</a> </li>
+  <li role="presentation"> <a href="#">Messages</a> </li>
+</ul> <br>
+<ul class="nav nav-pills nav-justified">
+  <li role="presentation" class="active"> <a href="#">home</a> </li>
+  <li role="presentation"> <a href="#">About</a> </li>
+  <li role="presentation"> <a href="#">Messages</a> </li>
+</ul>
+<p>to disable a link just add <code>.disabled</code> to the <code>&lt;li&gt;</code> </p>
+<h1> <mark>drop downs</mark> </h1>
+<p>with pills</p>
+<p> add <code>.open</code> to the parent item to make it open like what js do and add <code>.active</code> to make it auto
+selected <br> On mobile devices, opening a dropdown adds a <code>.dropdown-backdrop</code> as a tap area for closing dropdown menus when
+tapping outside the menu, a requirement for proper iOS support. <u>This means that switching from an open dropdown menu to a
+different dropdown menu requires an extra tap on mobile.</u> <br>
+<mark>Note:</mark> The <code>data-toggle="dropdown"</code> attribute is relied on for closing dropdown menus at an application level,
+so it's a good idea to always use it. <br>Add <code>data-toggle="dropdown"</code> to a link or button to toggle a dropdown.
+ </p>
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"> <a href="#">Home</a> </li>
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      <!-- data-toggle-> disable the href and toggle the menu -->
+      dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li role="presentation"> <a href="#">Item1</a> </li>
+      <li role="presentation"> <a href="#">Item2</a> </li>
+    </ul>
+  </li>
+</ul> <br>
+<p>with tabs</p>
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"> <a href="#">Home</a> </li>
+  <li role="presentation" class="dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      dropdown <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      <li role="presentation"> <a href="#">Item1</a> </li>
+      <li role="presentation"> <a href="#">Item2</a> </li>
+      <li role="separator" class="divider"></li>
+      <li role="presentation"> <a href="#">Item3</a> </li>
+    </ul>
+  </li>
+</ul>
+<p>To keep URLs intact with link buttons, use the <code>data-target</code> attribute instead of <code>href="#"</code> <br>
+<code>  &lt;li role="separator" class="divider"&gt; ... &lt;/li&gt; </code> to separate
+ </p>
+<!-- <figure>
+<div class="dropdown">
+<a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+  Dropdown trigger
+  <span class="caret"></span>
+</a>
+
+<ul class="dropdown-menu" aria-labelledby="dLabel">
+  ...
+</ul>
+</div>
+  <pre>
+  &lt;code class="language-html" data-lang="html"&gt;
+    &lt;div class="dropdown"&gt;
+  &lt;a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"&gt;
+    Dropdown trigger
+    &lt;span class="caret"></span&gt;
+  &lt;/a&gt;
+
+  &lt;ul class="dropdown-menu" aria-labelledby="dLabel"&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
+  </code>
+  </pre>
+</figure> -->
+
+
+
+
+
+</div>
+<div class="container" style="height:300px">
+
+</div>
+<script src="jquery-3.3.1.min.js" type="text/javascript" ></script>
+<script src="bootstrap-3.3.7-dist\js\bootstrap.min.js" type="text/javascript"></script>
+  </body>
+</html>
