@@ -1,0 +1,25 @@
+body {
+  background-color: #36b8e9;
+  -webkit-animation-name: move; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes move {
+  from {background-color:aquamarine;}
+  to {background-color:#59c5cb;}
+}
+
+/* Standard syntax */
+@keyframes move {
+  from {background-color:aquamarine;}
+  to {background-color:#59c5cb;}
+}
